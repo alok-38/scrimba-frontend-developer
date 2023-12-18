@@ -3,7 +3,7 @@
 # Don't spend $15K on a coding bootcamp
 
 Our Frontend Career Path helps motivated students
-become hireable developers for a fraction of the cos
+become hireable developers for a fraction of the cost
 
 ![Front end career path students](https://scrimba.com/static/art/peep-crowd.svg)
 
