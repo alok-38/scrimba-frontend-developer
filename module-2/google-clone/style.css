@@ -1,0 +1,20 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+main {
+    text-align: center; /* Center the content horizontally */
+    padding: 20px;
+    margin-top: 15%;
+}
+
+img {
+    max-width: 100%; /* Make sure the image doesn't exceed its container */
+    display: block; /* Remove default inline spacing */
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+input[type="search"] {
+    margin-top: 10px; /* Adjust the top margin as needed */
+}
