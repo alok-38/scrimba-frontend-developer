@@ -1,0 +1,13 @@
+main {
+    margin-top: 100px;
+}
+
+.google-logo {
+    display: block;
+    width: 270px;
+}
+
+.search-input {
+    display: block;
+    width: 300px;
+}
