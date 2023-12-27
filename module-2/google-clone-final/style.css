@@ -1,13 +1,36 @@
+body {
+    height: 80vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-family: Roboto,arial,sans-serif;
+    color: #202124;
+}
+
 main {
-    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
-.google-logo {
-    display: block;
-    width: 270px;
+img {
+    width: 500px;
 }
 
-.search-input {
-    display: block;
-    width: 300px;
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+input {
+    margin-bottom: 10px;
+}
+
+.button-container {
+    display: flex;
 }
