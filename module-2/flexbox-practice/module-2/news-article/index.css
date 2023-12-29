@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    width: 50%;
+}
+
+h1 {
+    margin: 10px 0 10px 7%;
+}
+
+h3 {
+    margin-bottom: 15px;
+}
+
+.mars {
+    height: 50%;
+    width: 25%;
+    margin: 0 0 15px 10%;
+}
+
+main {
+    width: 80%;
+    margin: auto;
+}
+
+p {
+    width: 50%;
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
