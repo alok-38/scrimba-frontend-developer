@@ -26,7 +26,7 @@ input {
     border-radius: 24px;
     outline: none;
     line-height: 22px;
-    border: .1px solid;
+    border: .1px solid #dfe1e5;
     margin: 0 auto;
     min-height: 44px;
     background-color: transparent;
