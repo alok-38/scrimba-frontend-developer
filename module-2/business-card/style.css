@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+img {
+    display: block;
+    width: 150px;
+    height: 110px;
+    margin-right: 25px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    background: #ddebf8;
+    padding: 15px 25px;
+    width: 25%;
+    height: 200px;
+}
+
+.bio-section {
+    line-height: 1.6;
+}
