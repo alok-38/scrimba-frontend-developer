@@ -32,6 +32,7 @@ h1 {
     font-family: 'Orbitron', sans-serif;
     color: #82a5ca;
     font-weight: 800;
+    cursor: pointer;
 }
 
 .underline {
