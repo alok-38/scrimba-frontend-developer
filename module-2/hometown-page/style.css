@@ -1,0 +1,19 @@
+* {
+    margin: 0; /* added */
+    padding: 0; /* added */
+    box-sizing: border-box; /* added */
+}
+
+.hero-image {
+    height: 100vh;
+    position: relative;
+}
+
+.hero-image {
+    content: '';
+    background-image: url("./images/Norway\ Landscape.jfif");
+    background-position: center;
+    top: 50%;
+    bottom: 0; 
+    z-index: -1;
+}
