@@ -1,7 +1,7 @@
 * {
-    margin: 0; /* added */
-    padding: 0; /* added */
-    box-sizing: border-box; /* added */
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
 }
 
 .hero-image {
@@ -13,7 +13,33 @@
     content: '';
     background-image: url("./images/Norway\ Landscape.jfif");
     background-position: center;
-    top: 50%;
-    bottom: 0; 
     z-index: -1;
+    text-align: center;
+    color: aliceblue;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+.flex-container {
+    margin: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+img {
+    display: block;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    margin: 0 auto 25px;
+}
+
+.flex-container p {
+    text-align: center;
+}
+
+footer p {
+    text-align: center;
 }
