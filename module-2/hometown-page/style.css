@@ -7,6 +7,9 @@
 .hero-image {
     height: 100vh;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .hero-image {
@@ -18,8 +21,9 @@
     color: aliceblue;
 }
 
-h1 {
-    font-size: 3em;
+.hero-image h1 {
+    font-size: 5em;
+    z-index: 1;
 }
 
 .flex-container {
