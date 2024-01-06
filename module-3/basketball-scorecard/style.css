@@ -16,6 +16,15 @@ body {
     opacity: .9;
     padding: 3em;
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border: .2rem solid #457b9d;
+    border-radius: 1em;
+}
+
+.column {
+    margin-left: .1em
 }
 
 h2 {
