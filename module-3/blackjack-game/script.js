@@ -69,3 +69,12 @@ startGameBtnEl.addEventListener('click', startGame = () => {
     sum = firstCard + secondCard;
     renderGame();
 });
+
+newGameBtnEl.addEventListener('click', newCard = () => {
+    if (isAlive === true && hasBlackJack === false) {
+        let card = getRandomCard();
+        sum += card;
+        cards.push(card);
+        renderGame();
+    }
+});
