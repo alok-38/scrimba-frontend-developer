@@ -31,13 +31,18 @@ function getRandomCard() {
 
 // Function to render the game
 function renderGame() {
+    // Clear the previous content of the "Cards" element
     cardsEl.textContent = "Cards: ";
+
+    // Loop through the cards array and append each card to the "Cards" element
     for (let i = 0; i < cards.length; i++) {
         cardsEl.textContent += cards[i] + " ";
     }
 
+    // Update the content of the "Sum" element with the current sum of the player's cards
     sumEl.textContent = "Sum: " + sum;
 
+    // Determine the message based on the sum of the player's cards
     if (sum <= 20) {
         message = "Do you want to draw a new card?";
     } else if (sum === 21) {
@@ -48,6 +53,7 @@ function renderGame() {
         isAlive = false;
     }
 
+    // Update the content of the "message" element with the determined message
     messageEl.textContent = message;
 }
 
