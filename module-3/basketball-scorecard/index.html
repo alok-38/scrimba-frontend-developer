@@ -5,9 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Basketball Scorecard</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <main class="container">
+        <section class="column">
+            <h2><span>H</span>ome</h2>
+            <p id="home-score">0</p>
+            <button type="button">+1</button>
+            <button type="button">+2</button>
+            <button type="button">+3</button>
+        </section>
+        <section class="column">
+            <h2><span>G</span>uest</h2>
+                <p id="guest-score">0</p>
+                <button type="button">+1</button>
+                <button type="button">+2</button>
+                <button type="button">+3</button>
+        </section>
+    </main>
+    <button class="newGameBtn" type="button">New Game</button>
     <script src="script.js"></script>
 </body>
 </html>
