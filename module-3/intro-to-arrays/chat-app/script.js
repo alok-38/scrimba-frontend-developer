@@ -1,41 +1,59 @@
-const sendBtnEl = document.getElementById("sendBtn");
-
-// Array to store chat messages
 let chatMessages = [];
 
-// Function to render messages
-function renderMessages() {
-    const messagesEl = document.getElementById("messages");
-    messagesEl.innerHTML = "";
-    chatMessages.forEach(message => {
+    function renderMessages() {
+      const messagesContainer = document.getElementById("messages");
+      messagesContainer.innerHTML = "";
+
+      chatMessages.forEach(message => {
         const listItem = document.createElement("li");
         listItem.textContent = `${message.sender}: ${message.content}`;
-        messagesEl.appendChild(listItem);
-    });
+        messagesContainer.appendChild(listItem);
+      });
 
-    // Scroll to the bottom to show the latest messages
-    messagesEl.scrollTop = messagesEl.scrollHeight;
-}
-
-
-// Function to send a message
-function sendMessage() {
-    const messageInputEl = document.getElementById("messageInput");
-    const messageContent = messageInputEl.value.trim();
-
-    if (messageContent !== "") {
-        // Create a message object with sender as "You"
-        const message = {
-            sender: "You",
-            content: messageContent
-        };
-         // Add the message to the array
-        chatMessages.push(message);
-        // Render the updated message
-        renderMessages();
-        // Clear the input field
-        messageInputEl.value = "";
+      messagesContainer.scrollTop = messagesContainer.scrollHeight;
     }
-}
 
-sendBtnEl.addEventListener('click', sendMessage);
+    function sendMessage() {
+      const messageInput = document.getElementById("messageInput");
+      const userMessage = messageInput.value.trim();
+
+      if (userMessage !== "") {
+        const userMessageObj = {
+          sender: "You",
+          content: userMessage
+        };
+
+        chatMessages.push(userMessageObj);
+        renderMessages();
+        messageInput.value = "";
+
+        // Simulate a computer response after a short delay
+        setTimeout(() => {
+          const computerResponseObj = {
+            sender: "Computer",
+            content: generateComputerResponse(userMessage)
+          };
+
+          chatMessages.push(computerResponseObj);
+          renderMessages();
+        }, 500); // Adjust the delay as needed
+      }
+    }
+
+    function generateComputerResponse(userMessage) {
+      // Basic logic for generating a computer response
+      // You can customize this logic based on your requirements
+      const responses = [
+        "I'm a computer, not a human.",
+        "Tell me more about that.",
+        "Interesting!",
+        "I don't understand. Can you clarify?"
+      ];
+
+      // Randomly select a response from the array
+      const randomIndex = Math.floor(Math.random() * responses.length);
+      return responses[randomIndex];
+    }
+
+    const sendBtnEl = document.getElementById("sendBtn");
+    sendBtnEl.addEventListener('click', sendMessage);
