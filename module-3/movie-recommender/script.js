@@ -7,7 +7,7 @@ const movies = {
 };
 
 // Event listener for the recommendation button
-const RecommendBtnEl = document.getElementById('RecommendBtn');
+document.getElementById('recommendBtn').addEventListener('click', recommendMovie);
 
 // Function to recommend a movie based on the selected genre
 function recommendMovie() {
@@ -16,5 +16,9 @@ function recommendMovie() {
 
     if (movies[selectedGenre]) {
         const randomIndex = Math.floor(Math.random() * movies[selectedGenre].length);
+        const recommendedMovie = movies[selectedGenre][randomIndex];
+        recommendationElement.innerText = `We recommend: ${recommendedMovie}`;
+    } else {
+        recommendationElement.innerText = 'Sorry, no recommendations for this genre.';
     }
 }
