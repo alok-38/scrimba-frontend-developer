@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Operation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+            line-height: 1.6;
+        }
+
+        #output {
+            margin-top: 20px;
+        }
+
+        label, input {
+            margin-bottom: 25px;
+        }
+
+        button {
+            margin-top: 25px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Array Operations</h1>
+    <label for="inputArray">Enter Array (comma-separated): </label>
+    <input type="text" id="inputArray" placeholder="e.g., 1, 2, 3, 4">
+    <br>
+    <label for="operation">Choose Operation:</label>
+    <select name="" id="operation">
+        <option value="sum">Sum</option>
+        <option value="average">Average</option>
+    </select>
+    <br>
+    <button id="calculateBtn" type="button">Calculate</button>
+    <button id="resetBtn" type="button">Reset</button>
+    <div id="output"></div>
+    <script>
+        const outputDivEl = document.getElementById("output");
+        const operationSelectEl = document.getElementById("operation");
+        const inputArrayEl = document.getElementById("inputArray");
+
+        function performOperation() {
+            const inputArray = inputArrayEl.value.trim();
+            const operationType = operationSelectEl.value.trim();
+
+            const numbers = inputArray.split(",").map(number => parseFloat(number.trim()));
+            let result;
+
+            switch (operationType) {
+                case "sum":
+                    result = numbers.reduce((accumulated, number) => accumulated + number, 0);
+                    break;
+                case "average":
+                    result = numbers.length > 0 ? numbers.reduce((acc, num) => acc + num, 0) / numbers.length : 0;
+                    break;
+            }
+
+            outputDivEl.innerHTML = `<p>Result: ${result}</p>`;
+        }
+
+        function resetOperation() {
+            outputDivEl.innerHTML = " ";
+            inputArrayEl.value = "";
+            operationSelectEl.value = "sum"; // Set the default operation type to "sum"
+        }
+
+        const calculateBtnEl = document.getElementById("calculateBtn");
+        calculateBtnEl.addEventListener("click", performOperation);
+
+        const resetBtnEl = document.getElementById("resetBtn");
+        resetBtnEl.addEventListener("click", resetOperation);
+    </script>
+</body>
+</html>
