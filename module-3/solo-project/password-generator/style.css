@@ -153,3 +153,18 @@ input[type="text"] {
 .fa-ellipsis-h {
   color: var(--clr-very-dark-blue);
 }
+
+/* ---------------------- */
+/* Media queries          */
+/* ---------------------- */
+
+@media (min-width: 520px) {
+  .container {
+    padding: 4em;
+  }
+
+  .downSection {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
