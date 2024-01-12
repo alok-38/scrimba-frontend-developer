@@ -30,7 +30,7 @@ main {
 }
 
 h1 {
-    color: #333;
+    color: #fff;
 }
 
 dl {
@@ -61,4 +61,16 @@ button {
 
   button:hover {
     background-color: #555;
+}
+
+ /* Responsive styling for mobile devices */
+ @media (max-width: 600px) {
+    dl {
+      grid-template-columns: 1fr;
+    }
+
+    img {
+        display: block;
+        width: 100%;
+    }
 }
