@@ -29,6 +29,7 @@ input:focus {
     box-shadow: 0 0 5px rgba(95, 147, 65, 0.5); /* Add a subtle shadow when focused */
     background: white; /* You can customize the background color when focused */
     padding-left: 5px;
+    font-weight: bold;
 }
 
 button {
@@ -45,4 +46,8 @@ button {
 button:hover {
     cursor: pointer;
     background: olivedrab;
+}
+
+button:focus {
+    outline: none;
 }
