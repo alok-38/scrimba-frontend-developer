@@ -2,15 +2,21 @@ let myLeads = [];
 const inputEl = document.getElementById('input-el');
 const inputBtn = document.getElementById('input-btn');
 
-// Push the input value to myLeads array when the button is clicked
-const pushValueToArray = () => {
-    const inputValue = inputEl.value.trim(); // Trim to remove leading and trailing whitespaces
+const pushValuesToTheArray = () => {
+    const inputValue = inputEl.value.trim();
     if (inputValue !== "") {
-        myLeads.push(inputValue);
-        inputEl.value = ""; // Clear the input field after pushing to the array
-        console.log(myLeads); // Optional: Log the array to the console
+        // Split the input value into an array using comma as the delimiter
+        const URLS = inputValue.split(',');
+        // Trim each URL and push to myLeads array
+        URLS.forEach(URL => {
+            const trimmedURL = URL.trim();
+            if (trimmedURL !== "") {
+                myLeads.push(trimmedURL);
+            }
+        });
+        inputEl.value = "";
+        console.log(myLeads);
     }
 }
 
-// Attach the pushValueToArray function to the button click event
-inputBtn.addEventListener('click', pushValueToArray);
+inputBtn.addEventListener('click', pushValuesToTheArray);
