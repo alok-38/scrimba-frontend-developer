@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Password generator</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="refactored.css">
 </head>
 <body>
     <main>
@@ -12,16 +12,19 @@
             <h1>Generate a <span>random password</span></h1>
             <p>Never use an insecure password again.</p>
             <input type="range" name="" id="" min="6" max="12">
-            <label>
-                Include Numbers
-                <input type="checkbox" id="includeNumbers">
-            </label>
-            <label>
-                Include Special Characters
-                <input type="checkbox" id="includeSpecialChars">
-            </label>
+            <div>
+                <label>
+                    Include Numbers
+                    <input type="checkbox" id="includeNumbers">
+                </label>
+                <label>
+                    Include Special Characters
+                    <input type="checkbox" id="includeSpecialChars">
+                </label>
+            </div>
             <button type="button">Generate password</button>
         </section>
+        <hr>
         <section class="password-display">
             <div>
                 <input type="text" name="" id="">
