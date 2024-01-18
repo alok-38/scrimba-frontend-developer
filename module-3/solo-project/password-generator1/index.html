@@ -14,12 +14,19 @@
             <input type="range" name="" id="" min="6" max="12">
             <div>
                 <label>
-                    Include Numbers
-                    <input type="checkbox" id="includeNumbers">
+                    Numbers
+                    <label class="switch">
+                        <input type="checkbox" id="includeNumbers">
+                        <span class="slider"></span>
+                    </label>
                 </label>
+                
                 <label>
-                    Include Special Characters
-                    <input type="checkbox" id="includeSpecialChars">
+                    Special Characters
+                    <label class="switch">
+                        <input type="checkbox" id="includeSpecialChars">
+                        <span class="slider"></span>
+                    </label>
                 </label>
             </div>
             <button id="generatePasswordBtn" type="button">Generate password</button>
