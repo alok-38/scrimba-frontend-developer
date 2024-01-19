@@ -35,6 +35,12 @@ button:hover {
     border-radius: 8px;
 }
 
+#interactive-message {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+}
+
 footer {
     position: fixed;
     width: 100%;
