@@ -35,6 +35,10 @@ h3, label {
     color: orangered;
 }
 
+label {
+    font-weight: bold;
+}
+
 main {
     max-width: 550px;
     margin: 15px auto 0 auto;
