@@ -98,3 +98,13 @@ button {
     top: 0;
     z-index: 2;
 }
+
+#confirmation-message {
+    display: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}

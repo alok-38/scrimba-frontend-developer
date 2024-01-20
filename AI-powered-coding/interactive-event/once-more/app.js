@@ -18,6 +18,9 @@ rsvpForm.addEventListener('submit', (event) => {
 
     // Show the confirmation message
      confirmationMessage.style.display = 'block';
+     confirmationMessage.style.backgroundColor = '#fff';
+     confirmationMessage.style.color = 'rebeccapurple';
+     confirmationMessage.style.fontWeight = 'bold';
   
     // Reset the form
     rsvpForm.reset();
