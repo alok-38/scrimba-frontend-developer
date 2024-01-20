@@ -40,27 +40,35 @@ h1 {
 h2 {
     font-size: 1.5em;
     margin-bottom: 20px;
+    color: rgb(234, 145, 29);
+}
+
+span {
+    color: #fff;
 }
 
 p {
     font-size: 1.1em;
     line-height: 1.6;
     margin-bottom: 30px;
+    width: 75%;
+    margin: 0 auto 25px auto;
 }
 
 /* Style the call to action button */
 .cta-button {
     display: inline-block;
-    padding: 15px 25px;
+    padding: 15px 35px;
     font-size: 1.2em;
     text-decoration: none;
-    background-color: rgb(89, 22, 156);
+    background-color: rgb(221, 145, 44);
     color: #fff; /* White text color for the button */
     border-radius: 5px; /* Rounded corners */
     transition: background-color 0.3s ease; /* Smooth transition on hover */
+    letter-spacing: 1.5px;
 }
 
 /* Change button color on hover */
 .cta-button:hover {
-    background-color: rgb(112, 65, 158)
+    background-color: rgb(219, 160, 83);
 }
