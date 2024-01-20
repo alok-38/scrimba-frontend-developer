@@ -1,0 +1,38 @@
+body {
+    background-color: rgb(241, 238, 237);
+}
+header, main {
+    background-color: #fff;
+    width: 40%;
+    margin: auto;
+    border-radius: 15px;
+}
+
+h1 {
+    text-align: center;
+    color: blueviolet;
+    font-weight: 800;
+}
+
+p {
+    width: 80%;
+    margin: auto;
+    line-height: 1.6;
+}
+
+span {
+    display: block;
+}
+
+img {
+    display: block;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin: auto;
+    border: 4px solid blueviolet;
+}
+
+input, button {
+    display: block;
+}
