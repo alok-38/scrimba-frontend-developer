@@ -13,7 +13,7 @@ main {
     line-height: 1.6;
     background-color:aliceblue;
     height: 65vh;
-    margin: 15vh auto;
+    margin: 10vh auto;
     padding: 25px 15px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -79,4 +79,13 @@ button {
 button:hover,
 button:focus {
     background-color: rgb(117, 75, 159); /* Darker purple on hover/focus */
+}
+
+/* confirmation-div */
+.confirmation-div {
+    color: aliceblue;
+    line-height: 1.6;
+    font-size: 44px;
+    letter-spacing: 1px;
+    margin-left: 35vw;
 }
