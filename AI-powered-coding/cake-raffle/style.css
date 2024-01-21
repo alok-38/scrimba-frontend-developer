@@ -38,11 +38,18 @@ input {
     padding: 10px;
     border-radius: 5px;
     outline: none;
-    border: .5px solid #ff4180;
+    border: .5px solid #d3ccce;
+    transition: border-color 0.3s;
+}
+
+input:hover,
+input:focus {
+    border: 2px solid #ff4180;
 }
 
 label {
     margin-bottom: 5px;
+    font-weight: 800;
 }
 
 button {
@@ -50,6 +57,9 @@ button {
     outline: none;
     border: none;
     border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 1px;
 }
 
 button[type="submit"] {
@@ -59,14 +69,35 @@ button[type="submit"] {
 .button-div {
     display: flex;
     margin-top: 20px;
+    gap: 10px;
 }
 
 .button-div button {
-    width: 48%;
     padding: 10px;
-    margin: auto;
 }
 
 .draw, button[type="submit"] {
     background-color: #ff4180;
+}
+
+button[type="submit"]:hover, .draw:hover,
+button[type="submit"]:focus, .draw:focus {
+    background-color: #ff6497;
+}
+
+.reset {
+    background-color: rgb(28, 94, 225);
+}
+
+.reset:hover,
+.reset:focus {
+    background-color: rgb(59, 116, 228);
+}
+
+/* Add fixed styles for input and buttons */
+input,
+button[type="submit"],
+.button-div button {
+    width: 100%;
+    box-sizing: border-box;
 }
