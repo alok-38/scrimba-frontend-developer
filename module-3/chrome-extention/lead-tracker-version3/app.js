@@ -1,56 +1,46 @@
-const inputElement = document.getElementById('input-el');
-const buttonElement = document.getElementById('input-btn');
-const ulElement = document.createElement('ul');
-const resultContainer = document.getElementById('result-container')
-let myLeads = [];
+myLeads = [];
+const inputEl = document.getElementById("input-el");
+const inputBtn = document.getElementById("input-btn");
+const unorderedListEl = document.createElement('ul');
 
-const displayMessageOnHover = () => {
-    // Add an event listener for 'mouseover' event
-    inputElement.addEventListener('mouseover', () => {
-        // Display a message when hovering over the input field
-        inputElement.value = 'Enter your leads';
+const promptOnHover = () => {
+    inputEl.addEventListener('mouseover', () => {
+        inputEl.style.fontWeight = 'normal';
+        inputEl.value = 'Enter your leads';
     });
 
-    // Add event lister for a 'click' event
-    inputElement.addEventListener('click', () => {
-        inputElement.value = '';
+    inputEl.addEventListener('click', () => {
+        inputEl.value = '';
     });
-
-    // Add event listener for 'mouseleave'
-    inputElement.addEventListener('mouseleave', () => {
-        inputElement.value = '';
-    });
-
 }
 
-// Function to accept user input and store them in an array
+const isLeadDuplicate = (lead) => {
+    return myLeads.includes(lead);
+}
+
 const acceptUserInput = () => {
-    const inputValue = inputElement.value.trim();
-    if (inputValue !== '') {
-        myLeads.push(inputValue);
-        inputElement.value = '';
-        renderOutput();
+    const userInput = inputEl.value.trim();
+    if (userInput !== '' && !isLeadDuplicate(userInput)) {
+        myLeads.push(userInput);
+        displayLeads();
+        inputEl.value = '';
+    } else {
+        // Optionally, you can notify the user that the lead is a duplicate
+        alert("Duplicate lead! Please enter a unique lead.");
     }
 }
 
-// Function to render the user input as an unordered list
-const renderOutput = () => {
-    // Clear the existing list items
-    ulElement.innerHTML = '';
-    // Iterate through the myLeads array and create list items dynamically
+const displayLeads = () => {
+    unorderedListEl.innerHTML = '';
+
     myLeads.forEach((lead) => {
-        const liElement = document.createElement('li');
-        liElement.textContent = lead;
-        ulElement.appendChild(liElement);
+        const listItem = document.createElement("li");
+        listItem.textContent = lead;
+        unorderedListEl.appendChild(listItem);
     });
-    // Append the unordered list to the result container
-    // Clear the existing content
-    resultContainer.innerHTML = '';
-    resultContainer.appendChild(liElement);
+
+    document.body.appendChild(unorderedListEl);
 }
 
-// Add event listener to the button to trigger the acceptUserInput function
-buttonElement.addEventListener('click', acceptUserInput);
-
-
-displayMessageOnHover();
+inputBtn.addEventListener('click', acceptUserInput);
+promptOnHover(); // Add this line to ensure the promptOnHover is initialized
