@@ -1,5 +1,8 @@
 const inputElement = document.getElementById('input-el');
-const buttonElement = document.getElementById('input-btn')
+const buttonElement = document.getElementById('input-btn');
+const ulElement = document.createElement('ul');
+const resultContainer = document.getElementById('result-container')
+let myLeads = [];
 
 const displayMessageOnHover = () => {
     // Add an event listener for 'mouseover' event
@@ -19,5 +22,35 @@ const displayMessageOnHover = () => {
     });
 
 }
+
+// Function to accept user input and store them in an array
+const acceptUserInput = () => {
+    const inputValue = inputElement.value.trim();
+    if (inputValue !== '') {
+        myLeads.push(inputValue);
+        inputElement.value = '';
+        renderOutput();
+    }
+}
+
+// Function to render the user input as an unordered list
+const renderOutput = () => {
+    // Clear the existing list items
+    ulElement.innerHTML = '';
+    // Iterate through the myLeads array and create list items dynamically
+    myLeads.forEach((lead) => {
+        const liElement = document.createElement('li');
+        liElement.textContent = lead;
+        ulElement.appendChild(liElement);
+    });
+    // Append the unordered list to the result container
+    // Clear the existing content
+    resultContainer.innerHTML = '';
+    resultContainer.appendChild(liElement);
+}
+
+// Add event listener to the button to trigger the acceptUserInput function
+buttonElement.addEventListener('click', acceptUserInput);
+
 
 displayMessageOnHover();
