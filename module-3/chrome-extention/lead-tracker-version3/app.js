@@ -1,7 +1,9 @@
-myLeads = [];
+myLeads = loadLeadsFromLocalStorage(); // Load leads from local storage
+
 const inputEl = document.getElementById("input-el");
 const inputBtn = document.getElementById("input-btn");
-const unorderedListEl = document.createElement('ul');
+const resetBtn = document.getElementById("reset-btn");
+const unorderedListEl = document.createElement('div'); // Changed ul to div for anchor elements
 
 const promptOnHover = () => {
     inputEl.addEventListener('mouseover', () => {
@@ -22,10 +24,10 @@ const acceptUserInput = () => {
     const userInput = inputEl.value.trim();
     if (userInput !== '' && !isLeadDuplicate(userInput)) {
         myLeads.push(userInput);
+        saveLeadsToLocalStorage(); // Save leads to local storage
         displayLeads();
         inputEl.value = '';
     } else {
-        // Optionally, you can notify the user that the lead is a duplicate
         alert("Duplicate lead! Please enter a unique lead.");
     }
 }
@@ -34,13 +36,35 @@ const displayLeads = () => {
     unorderedListEl.innerHTML = '';
 
     myLeads.forEach((lead) => {
-        const listItem = document.createElement("li");
-        listItem.textContent = lead;
-        unorderedListEl.appendChild(listItem);
+        const anchorElement = document.createElement("a");
+        anchorElement.href = lead;
+        anchorElement.textContent = lead;
+        anchorElement.target = "_blank"; // Open links in a new tab/window
+        anchorElement.style.display = "block"; // Add some space between links
+        unorderedListEl.appendChild(anchorElement);
     });
 
     document.body.appendChild(unorderedListEl);
 }
 
+const resetLeads = () => {
+    myLeads = [];
+    saveLeadsToLocalStorage(); // Save empty array to clear local storage
+    displayLeads();
+}
+
+function saveLeadsToLocalStorage() {
+    localStorage.setItem("myLeads", JSON.stringify(myLeads));
+}
+
+function loadLeadsFromLocalStorage() {
+    const storedLeads = localStorage.getItem("myLeads");
+    return storedLeads ? JSON.parse(storedLeads) : [];
+}
+
 inputBtn.addEventListener('click', acceptUserInput);
-promptOnHover(); // Add this line to ensure the promptOnHover is initialized
+resetBtn.addEventListener('click', resetLeads); // Added event listener for reset button
+promptOnHover();
+
+// Display leads when the page loads
+displayLeads();
