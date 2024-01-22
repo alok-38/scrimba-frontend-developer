@@ -11,6 +11,7 @@ input {
     display: block;
     width: 30%;
     margin-bottom: 15px;
+    box-sizing: border-box;
 }
 
 button, input {
@@ -20,6 +21,10 @@ button, input {
 input:hover,
 input:focus {
     border: 2px solid #5f9341;
+    background-color: #eaf0e8;
+    font-size: 18px;
+    font-weight: bold;
+    color: #6c6a6a;
 }
 
 button {
