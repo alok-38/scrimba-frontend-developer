@@ -44,10 +44,13 @@ const loadLeadsFromLocalStorage = () => {
 }
 
 const acceptUserInput = () => {
-    // Check if the currentInputValue is not already in the array
-    if (!myLeads.includes(currentInputValue)) {
-        myLeads.push(currentInputValue); // Push the currentInputValue to myLeads
-        currentInputValue = ''; // Reset currentInputValue
+    const leadsArray = currentInputValue.split(',').map(lead => lead.trim());
+    const validLeads = leadsArray.filter(lead => lead !== '');
+    const newLeads = validLeads.filter(lead => !myLeads.includes(lead));
+
+    if (newLeads.length > 0) {
+        myLeads.push(...newLeads);
+        currentInputValue = '';
         renderLeads();
         updateLocalStorage();
     } else {
@@ -74,6 +77,9 @@ const renderLeads = () => {
 
     // Append the updated list to the body
     document.body.appendChild(ulElement);
+
+     // Clear the input field after rendering all leads
+     inputElement.value = '';
 }
 
 saveButtonElement.addEventListener('click', acceptUserInput);
