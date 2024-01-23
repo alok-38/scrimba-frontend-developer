@@ -31,6 +31,11 @@ const updateLocalStorage = () => {
     localStorage.setItem('myLeads', JSON.stringify(myLeads));
 }
 
+const resetLocalStorage = () => {
+    localStorage.removeItem('myLeads');
+}
+
+
 const loadLeadsFromLocalStorage = () => {
     if (localStorage.getItem('myLeads')) {
         myLeads = JSON.parse(localStorage.getItem('myLeads'));
@@ -78,6 +83,7 @@ resetButtonElement.addEventListener('click', () => {
     myLeads = [];
     renderLeads();
     updateLocalStorage();
+    resetLocalStorage(); // Clear local storage
 });
 
 displayOnHover();
