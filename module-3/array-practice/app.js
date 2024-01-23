@@ -1,28 +1,34 @@
-// Function to render an unordered list to the DOM
-const renderList = (array) => {
-    // Get the output div
+// Array to store courses
+const myCourses = [];
+
+// Function to add a course to the array
+const addCourse = () => {
+    const courseInput = document.getElementById('courseInput');
+    const courseItem = courseInput.value.trim();
+
+    if (courseItem !== '') {
+        myCourses.push(courseItem);
+        courseInput.value = '';
+    }
+};
+
+// Function to render the list to the DOM
+const renderList = () => {
     const outputDiv = document.getElementById("output");
-    // Clear previous content
     outputDiv.innerHTML = "";
-    // Create an unordered list element
     const ulElement = document.createElement('ul');
-     // Loop through the array and create list items
-     array.forEach(item => {
+    myCourses.forEach(course => {
         const liElement = document.createElement('li');
-        liElement.textContent = item;
+        liElement.textContent = course;
         ulElement.appendChild(liElement);
-     });
-     // Append the unordered list to the output div
-     outputDiv.appendChild(ulElement);
-}
+    });
+    outputDiv.appendChild(ulElement);
+};
 
-// Example array
-const myCourses = ["Learn CSS Animations", "UI Design Fundamentals", "Intro to Clean Code"];
-    
-// Get the button element
-const buttonElement = document.getElementById('render-btn');
+// Event listener to add a course on button click
+const addCourseBtn = document.getElementById('addCourseBtn');
+addCourseBtn.addEventListener('click', addCourse);
 
-// Add an event listener to trigger the function on button click
-buttonElement.addEventListener('click', function() {
-  renderList(myCourses);
-});
+// Event listener to render the list on button click
+const renderBtn = document.getElementById('renderBtn');
+renderBtn.addEventListener('click', renderList);
