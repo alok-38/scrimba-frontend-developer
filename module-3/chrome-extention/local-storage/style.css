@@ -58,3 +58,17 @@ ul {
     list-style-type: none;
     margin-top: 15px;
 }
+
+ul li {
+    margin-top: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(247, 167, 19);
+}
+
+a:hover {
+    text-decoration: underline;
+    color: rgb(230, 150, 2);
+}
