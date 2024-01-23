@@ -1,4 +1,4 @@
-let myLeads = []; // Add this line to declare and initialize myLeads array
+let myLeads = localStorage.getItem('myLeads') ? JSON.parse(localStorage.getItem('myLeads')) : [];
 
 const inputElement = document.getElementById('input-el');
 const saveButtonElement = document.getElementById('input-btn');
@@ -27,10 +27,28 @@ const displayOnHover = () => {
     });
 }
 
+const updateLocalStorage = () => {
+    localStorage.setItem('myLeads', JSON.stringify(myLeads));
+}
+
+const loadLeadsFromLocalStorage = () => {
+    if (localStorage.getItem('myLeads')) {
+        myLeads = JSON.parse(localStorage.getItem('myLeads'));
+        renderLeads();
+    }
+}
+
 const acceptUserInput = () => {
-    myLeads.push(currentInputValue); // Push the currentInputValue to myLeads
-    currentInputValue = ''; // Reset currentInputValue
-    renderLeads();
+    // Check if the currentInputValue is not already in the array
+    if (!myLeads.includes(currentInputValue)) {
+        myLeads.push(currentInputValue); // Push the currentInputValue to myLeads
+        currentInputValue = ''; // Reset currentInputValue
+        renderLeads();
+        updateLocalStorage();
+    } else {
+        alert("Duplicate lead! Please enter a unique value.");
+        inputElement.value = '';
+    }
 }
 
 const renderLeads = () => {
@@ -59,6 +77,10 @@ saveButtonElement.addEventListener('click', acceptUserInput);
 resetButtonElement.addEventListener('click', () => {
     myLeads = [];
     renderLeads();
+    updateLocalStorage();
 });
 
 displayOnHover();
+
+// Load leads from localStorage when the page loads
+loadLeadsFromLocalStorage();
