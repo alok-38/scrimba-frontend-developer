@@ -1,9 +1,11 @@
+let myLeads = []; // Add this line to declare and initialize myLeads array
+
 const inputElement = document.getElementById('input-el');
 const saveButtonElement = document.getElementById('input-btn');
 const resetButtonElement = document.getElementById('reset-btn');
 const ulElement = document.createElement('ul');
 
-let myLeads = [];
+let currentInputValue = ''; // Variable to store the entered value
 
 const displayOnHover = () => {
     inputElement.addEventListener('mouseover', () => {
@@ -11,18 +13,23 @@ const displayOnHover = () => {
         inputElement.value = 'Enter your leads';
     });
 
-    inputElement.addEventListener('mouseleave', () => {
-        inputElement.value = '';
+    inputElement.addEventListener('click', () => {
+        inputElement.value = currentInputValue; // Set value to currentInputValue
     });
 
-    inputElement.addEventListener('click', () => {
-        inputElement.value = '';
+    inputElement.addEventListener('mouseleave', () => {
+        inputElement.value = currentInputValue; // Set value to currentInputValue
+    });
+
+    // Update currentInputValue when the input value changes
+    inputElement.addEventListener('input', () => {
+        currentInputValue = inputElement.value;
     });
 }
 
 const acceptUserInput = () => {
-    myLeads.push(inputElement.value);
-    inputElement.value = '';
+    myLeads.push(currentInputValue); // Push the currentInputValue to myLeads
+    currentInputValue = ''; // Reset currentInputValue
     renderLeads();
 }
 
@@ -39,6 +46,7 @@ const renderLeads = () => {
         anchor.target = '_blank';
         listItem.appendChild(anchor);
         ulElement.appendChild(listItem);
+        inputElement.value = '';
     });
 
     // Append the updated list to the body
