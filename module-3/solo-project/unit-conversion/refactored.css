@@ -91,8 +91,10 @@ section {
     justify-content: center;
     align-items: center;
     color: #5A537B;
+    flex-direction: column;
 }
 
 section p {
-    margin: 5px auto 30px auto;
+    margin: 5px auto 5px auto;
 }
+
