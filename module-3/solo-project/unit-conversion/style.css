@@ -26,6 +26,7 @@ header {
     padding: 25px;
     border-radius: 3px;
     height: 285px;
+    margin-bottom: 25px;
 }
 
 header div {
@@ -92,7 +93,7 @@ section {
     margin-top: 15px;
     border-radius: 4.681px 0px 0px 0px;
     background-color: #FFF;
-    margin: 15px auto;
+    margin: 15px auto 10px auto;
     display: flex;
     justify-content: center;
     align-items: center;
