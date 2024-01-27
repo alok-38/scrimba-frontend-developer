@@ -54,3 +54,9 @@ html, body {
     font-weight: bold;
 }
 
+.status .indicator span {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 7px;
+}
