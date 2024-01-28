@@ -61,9 +61,203 @@ a {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .hero-image {
     max-width: 350px;
+}
+
+.hero-heading {
+    font-size: 80px;
+    font-weight: 700;
+    margin: 0;
+}
+
+h1 span {
+    color: #007000;
+    font-weight: 700;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+    display: inline;
+}
+
+.hero-text {
+    font-size: 20px;
+    max-width: 300px;
+    margin-bottom: 30px;
+}
+
+.hero-link {
+    border: 2px solid #333333;
+    padding: 8px 20px;
+    border-radius: 40px;
+    width: 100px;
+}
+
+.hero-link:hover,
+.hero-link:focus {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+/* Info section */
+.info-section {
+    margin: 250px auto;
+    width: 800px;
+}
+
+.info-image {
+    max-width: 200px;
+    position: absolute;
+    left: -30px;
+    top: -170px;
+}
+
+.info {
+    margin-left: 200px;
+}
+
+.info-heading {
+    font-size: 48px;
+    margin: 0;
+}
+
+.info a {
+    color: #007000;
+}
+
+.info a:hover {
+    text-decoration: underline;
+}
+
+.statistics {
+    /* width: 620px; */
+    position: relative;
+    background-color: #333333;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 30px;
+    width: 100%;
+}
+
+.stat-heading {
+    color: #cccccc;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+.stat-number {
+    font-size: 40px;
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.stat p {
+    color: #ffffff;
+}
+
+/* About section */
+.about-section {
+    background-color: rgba(255, 255, 255, 0.85);
+    background-blend-mode: lighten;
+    background-image: url(images/clouds.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    margin: 0 auto;
+    padding: 40px;
+    border: 2px solid #333333;
+}
+
+.about-heading {
+    margin: 0;
+    font-size: 48px;
+}
+.about span {
+    color: #007000;
+}
+.about-link {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.about a {
+    border: 2px solid #333333;
+    padding: 8px 20px;
+    border-radius: 40px;
+}
+
+.about a:hover {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+/* Sign Up Form */
+.form-heading {
+    font-size: 48px;
+    margin: 0;
+}
+.form-intro {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.form-section {
+    margin: 120px auto;
+    width: 450px;
+    text-align: center;
+}
+.input {
+    display: block;
+    width: 300px;
+    margin: 5px auto 10px;
+    border-radius: 20px;
+    padding: 8px 20px;
+    border: 2px solid #333333;
+	font-family: 'Poppins', sans-serif;
+}
+.input::-webkit-input-placeholder {
+    color: #aaaaaa;
+}
+.submit-button {
+    border: 2px solid #333333;
+    padding: 8px 20px;
+    border-radius: 40px;
+    margin: 10px auto 0;
+    width: 130px;
+	font-family: 'Poppins', sans-serif;
+}
+.submit-button:hover {
+    background-color: #dddddd;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background-color: #333333;
+    margin-top: 100px;
+}
+.social-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px 40px;
+    width: 800px;
+    color: #ffffff;
+}
+.social-links p {
+    display: inline;
+    font-size: 16px;
+}
+.social-links ion-icon {
+    padding-right: 10px;
+}
+.social-link {
+    display: flex;
+    align-items: center;
 }
