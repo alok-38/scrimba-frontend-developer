@@ -24,6 +24,9 @@ const acceptInputValue = () => {
         listItem.textContent = inputvalue;
         // Append the new <li> to the <ul> with id 'shopping-list'
         shoppingListUl.appendChild(listItem);
+        // Clear the input field
+        inputFieldEl.value = "";
+        inputFieldEl.placeholder = "";
     }).catch(error => {
         console.log("Error adding item to the shopping list:", error);
     });
