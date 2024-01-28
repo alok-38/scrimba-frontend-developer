@@ -13,9 +13,20 @@ const inputFieldEl = document.getElementById('input-field');
 const addButtonEl = document.getElementById('add-button');
 
 const acceptInputValue = () => {
-    let inputValue = inputFieldEl.value;
-    push(shoppingListInDB, inputValue);
-    console.log(inputValue);
+    let inputvalue = inputFieldEl.value;
+    // Push the input value to the Firebase Realtime Database
+    push(shoppingListInDB, inputvalue).then(() => {
+        // After successfully pushing the value to the database, update the UI
+        const shoppingListUl = document.getElementById('shopping-list');
+        // Create a new <li> element
+        const listItem = document.createElement('li');
+        // Set the text content
+        listItem.textContent = inputvalue;
+        // Append the new <li> to the <ul> with id 'shopping-list'
+        shoppingListUl.appendChild(listItem);
+    }).catch(error => {
+        console.log("Error adding item to the shopping list:", error);
+    });
 }
 
 addButtonEl.addEventListener('click', acceptInputValue);
