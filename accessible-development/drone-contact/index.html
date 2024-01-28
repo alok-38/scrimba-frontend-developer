@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drone Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+        
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body class="contact-page">
+    <main id="main">
+        <!-- Form section -->
+        <section class="contact-form-section">
+            <form action="">
+                <h2 class="contact-form-heading">Sign up</h2>
+                <p class="contact-form-intro">Enter your contact information, and then there will be cake. 🍰</p>
+                <label for="full-name">Full Name</label>
+                <input id="full-name" class="contact-input" type="text" placeholder="e.g. John Doe" />
+                <label for="address">Address</label>
+                <input id="address" class="contact-input" type="text" placeholder="e.g. 123 Main St" />
+                <div class="address">
+                    <div class="city">
+                        <label for="city">City</label>
+                        <input id="city" class="address-input" type="text" placeholder="e.g. New York" />
+                    </div>
+                    <div class="postcode">
+                        <label for="postcode">Postcode</label>
+                        <input id="postcode" class="address-input" type="text" placeholder="e.g. 10001" />
+                    </div>
+                </div>
+                <label for="email">Email</label>
+                <input id="email" class="contact-input" type="text" placeholder="e.g. example@example.com" />
+                <div class="radio-container">
+                    <p>Do you have cats?</p>
+                    <label for="yes">Yes</label>
+                    <input id="yes" class="contact-radio" type="radio" name="cats" />
+                    <label for="no">No</label>
+                    <input id="no" class="contact-radio" type="radio" name="cats" />
+                </div>
+                <button class="contact-submit-button" type="button">Send message 🎉</button>
+            </form>
+            <img class="contact-image" src="images/drone-contact.png" alt="A woman seeing a drone approaching." />
+        </section>
+    </main>
+</body>
+</html>
