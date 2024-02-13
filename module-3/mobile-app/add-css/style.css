@@ -1,0 +1,92 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    /*
+    font-family: 'Rubik', sans-serif;
+    background-color: #EEF0F4;
+    */
+    font-family: 'Rubik', sans-serif;
+    background-color: #EEF0F4;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    height: 50vh;
+    align-items: center;
+    flex-direction: column;
+    border: 4px solid rgb(79, 77, 76);
+    width: 25%;
+    margin: 100px auto;
+    border-radius: 15px;
+    gap: 10px;
+}
+
+body:hover {
+    background-color: #f5dee1;
+}
+
+input {
+    /*
+    color: #432000;
+    background-color: #DCE1EB
+    */
+    color: #432000;
+    background-color: #DCE1EB;
+    letter-spacing: 1px;
+}
+
+input, button {
+    padding: 15px 45px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 18px;
+}
+
+input::placeholder {
+    text-align: center;
+}
+
+input::placeholder:hover {
+    color: #ffffff;
+}
+
+input::placeholder:focus {
+    color: #ffffff;
+}
+
+button {
+    /*
+    color: #FDFDFD;
+    background-color: #AC485A;
+    */
+    color: #FDFDFD;
+    background-color: #AC485A;
+    letter-spacing: 1px;
+    width: 76%;
+}
+
+/* Hover effect */
+button:hover {
+    background-color: #af364d;
+}
+
+input:hover {
+    background-color: rgb(244, 214, 214);
+    color: #ffffff;
+}
+
+input:focus {
+    background-color:rgb(241, 196, 196);
+    color: #ffffff;
+}
+
+/* Focus effect */
+button:focus {
+    background-color: #b52b45;
+    color: #ffffff;
+    outline: none;
+}
