@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    line-height: 1.6;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-size: 21px;
+    text-align: center;
+}
+
+.container {
+    max-width: 570px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    font-size: 60px;
+}
+
+h2 {
+    font-size: 42px;
+}
+
+h1,
+h2 {
+    font-weight: 300;
+}
+
+h3 {
+    font-size: 36px;
+    font-weight: 900;
+}
+
+.small {
+    font-size: 16px;
+}
+
+img {
+    display: block;
+    margin: auto;
+}
+
+h1 span,
+h2 span {
+    display: block;
+    font-weight: 900;
+}
+
+/* links */
+a {
+    color: #99d930;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #131313;
+}
