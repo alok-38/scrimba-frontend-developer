@@ -42,6 +42,11 @@ h3 {
 img {
     display: block;
     margin: auto;
+    height: 200px;
+    width: 200px;
+    border: none;
+    object-fit: cover;
+    outline: none;
 }
 
 h1 span,
@@ -58,4 +63,20 @@ a {
 
 a:hover {
     color: #131313;
+}
+
+/* Background colors */
+header {
+    background-color: #D7D7D7;
+    padding: 100px 0;
+}
+
+main {
+    background-color: #FFEAEA;
+    padding: 100px 0;
+}
+
+footer {
+    background-color: #EAF9FF;
+    padding: 100px 0;
 }
