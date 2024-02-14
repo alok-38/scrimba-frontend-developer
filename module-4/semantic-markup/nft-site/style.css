@@ -1,6 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: "Roboto", sans-serif;
     font-size: 16px;
     color: #2b283a;
     margin: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #5f29a3;
+    padding: 45px 0px;
+}
+
+h1 {
+    font-size: 36px;
+    color: whitesmoke;
+}
+
+h3 {
+    font-size: 20px;
+    color: #d0aaff;
+}
+
+/* section */
+section {
+    padding: 45px 0px;
+}
+
+.purple-sneakers {
+    width: 100%;
+    margin: auto;
+    display: block;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 16px;
+}
+
+h2,p {
+    color: #2b283a;
+}
+
+/* anchor elements */
+a {
+    color: #ef5839;
+    text-decoration: none;
+}
+
+a:hover,
+a:active {
+    color: #d4b44c;
+}
+
+/* Container */
+.container {
+    max-width: 620px;
+    margin: auto;
+}
+
+footer {
+    text-align: center;
 }
