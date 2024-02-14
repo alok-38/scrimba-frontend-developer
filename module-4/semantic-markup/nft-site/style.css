@@ -1,9 +1,11 @@
+/* Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Typography */
 body {
     font-family: "Roboto", sans-serif;
     font-size: 16px;
@@ -12,14 +14,14 @@ body {
     line-height: 1.6;
 }
 
-header {
-    background-color: #5f29a3;
-    padding: 45px 0px;
-}
-
 h1 {
     font-size: 36px;
     color: whitesmoke;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
 }
 
 h3 {
@@ -27,30 +29,33 @@ h3 {
     color: #d0aaff;
 }
 
-/* section */
-section {
-    padding: 45px 0px;
-}
-
-.purple-sneakers {
-    width: 100%;
-    margin: auto;
-    display: block;
-}
-
-h2 {
-    font-size: 24px;
-}
-
 p {
     font-size: 16px;
+    margin-bottom: 15px;
 }
 
-h2,p {
+/* Colors */
+h2,
+p,
+section,
+.footer p,
+.section-two h2,
+.section-two p {
     color: #2b283a;
 }
 
-/* anchor elements */
+header {
+    background-color: #5f29a3;
+    padding: 45px 0px;
+}
+
+.footer {
+    text-align: center;
+    padding: 45px 0;
+    color: #5f29a3;
+}
+
+/* Links */
 a {
     color: #ef5839;
     text-decoration: none;
@@ -61,12 +66,43 @@ a:active {
     color: #d4b44c;
 }
 
-/* Container */
+/* Containers */
 .container {
     max-width: 620px;
     margin: auto;
 }
 
-footer {
+/* Sections */
+section {
+    padding: 45px 0px;
+}
+
+.section-two,
+.section-one {
+    width: 100%;
+    padding: 25px;
+}
+
+.section-two {
+    color: whitesmoke;
+    background-color: #5f29a3;
+}
+
+.section-two h2 {
     text-align: center;
+}
+
+/* Images */
+.image-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.image-container img {
+    width: 270px;
+    border-radius: 4.6px;
+}
+
+.section-one img {
+    margin-bottom: 15px;
 }
