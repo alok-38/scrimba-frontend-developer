@@ -23,6 +23,8 @@ h1 {
 
 h2 {
     font-size: 42px;
+    border-top: 1px dotted #c4c4c4;
+    border-bottom: 1px dotted #c4c4c4;
 }
 
 h1,
