@@ -41,7 +41,7 @@ input {
 input:hover,
 input:focus {
     background-color: rgb(245, 229, 199);
-    color: aliceblue;
+    color: black;
 }
 
 button {
@@ -52,4 +52,10 @@ button {
 button:hover,
 button:focus {
     background-color: orangered;
+}
+
+/* Para */
+p {
+    margin-top: 10px;
+    margin-bottom: 0;
 }
