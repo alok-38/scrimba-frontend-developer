@@ -1,0 +1,38 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+    border: 3px salmon solid;
+    width: 30%;
+    height: 300px;
+    margin: 200px auto;
+}
+
+input,
+button {
+    outline: none;
+    padding: 10px 35px;
+    cursor: pointer;
+    width: 50%;
+    letter-spacing: 1px;
+    border: none;
+}
+
+input::placeholder {
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+input {
+    margin-bottom: 25px;
+    box-sizing: border-box;
+}
+
