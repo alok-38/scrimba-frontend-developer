@@ -10,10 +10,11 @@ body {
     align-items: center;
     justify-content: center;
     height: 70vh;
-    border: 3px salmon solid;
+    border: 3px darkorange solid;
     width: 30%;
     height: 300px;
     margin: 200px auto;
+    border-radius: 15px;
 }
 
 input,
@@ -34,5 +35,21 @@ input::placeholder {
 input {
     margin-bottom: 25px;
     box-sizing: border-box;
+    background-color: aliceblue;
 }
 
+input:hover,
+input:focus {
+    background-color: rgb(245, 229, 199);
+    color: aliceblue;
+}
+
+button {
+    background-color: darkorange;
+    color: whitesmoke;
+}
+
+button:hover,
+button:focus {
+    background-color: orangered;
+}
