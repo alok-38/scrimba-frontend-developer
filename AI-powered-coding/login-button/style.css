@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    text-align: center;
+    margin-top: 50px;
+    /* Adjust this value to add space above the button */
+}
+
+.twitter-button {
+    background-color: #1da1f2;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 25px;
+}
+
+.twitter-button:hover {
+    background-color: #0f81d6;
+}
+
+.github-button {
+    background-color: #24292e;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.github-button:hover {
+    background-color: #1e2226;
+}
