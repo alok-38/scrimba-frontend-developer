@@ -11,32 +11,40 @@ body {
     /* Adjust this value to add space above the button */
 }
 
-.twitter-button {
-    background-color: #1da1f2;
+.twitter-button,
+.github-button {
     color: white;
     border: none;
-    border-radius: 25px;
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    margin-right: 25px;
+    border-radius: 25px;
 }
 
-.twitter-button:hover {
-    background-color: #0f81d6;
+.twitter-button {
+    background-color: #1da1f2;
+    margin-right: 25px;
 }
 
 .github-button {
     background-color: #24292e;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+}
+
+/* Hover Effect */
+.twitter-button:hover {
+    background-color: #0f81d6;
 }
 
 .github-button:hover {
     background-color: #1e2226;
+}
+
+/* Click Effect */
+.twitter-button:active {
+    background-color: #0c6fbf;
+}
+
+.github-button:active {
+    background-color: #1a1e21;
 }
