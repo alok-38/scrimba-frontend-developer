@@ -9,6 +9,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f0f0f0;
+    line-height: 1.6;
 }
 
 header {
@@ -21,11 +22,13 @@ header {
 header h1 {
     margin: 0;
     font-size: 24px;
+    text-align: center;
 }
 
 header h2 {
     margin: 5px 0 0;
     font-size: 18px;
+    text-align: center;
 }
 
 main {
@@ -44,6 +47,8 @@ section {
 section h2 {
     margin-top: 0;
     font-size: 20px;
+    text-align: center;
+    margin-bottom: 15px;
 }
 
 p {
@@ -66,6 +71,7 @@ select {
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 16px;
+    margin-bottom: 15px;
 }
 
 button[type="submit"] {
@@ -80,6 +86,7 @@ button[type="submit"] {
     display: block;
     margin: auto;
     margin-top: 15px;
+    width: 100%;
 }
 
 #confirmationMessage {
@@ -105,14 +112,17 @@ button[type="submit"] {
 
     h1 {
         font-size: 20px;
+        text-align: center;
     }
 
     h2 {
         font-size: 16px;
+        text-align: center;
     }
 
     h3 {
         font-size: 18px;
+        text-align: center;
     }
 
     p {
