@@ -14,12 +14,39 @@ header {
     padding: 20px;
 }
 
+h2 {
+    color: orange;
+    font-size: 1.75em;
+}
+
 /* Entry form styles */
 .entry-form label,
 .entry-form input,
 .entry-form button {
     display: block;
     margin-bottom: 10px;
+    width: 100%;
+}
+
+/* input */
+input[type="text"] {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px 25px;
+    outline: none;
+    border: .1px solid rgb(234, 230, 230);
+    margin-bottom: 15px;
+}
+
+input[type="text"]:hover,
+input[type="text"]:focus {
+    border: #c60055 2px solid;
+}
+
+input::placeholder {
+    font-size: 1.5em;
+    text-align: center;
 }
 
 .entry-form button {
@@ -27,7 +54,7 @@ header {
     /* Vibrant button background color */
     color: #fff;
     border: none;
-    padding: 10px 20px;
+    padding: 15px 25px;
     cursor: pointer;
 }
 
@@ -52,19 +79,41 @@ header {
     margin-top: 20px;
 }
 
+/* Buttons */
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
 /* Draw button styles */
 #draw-button {
-    display: block;
-    margin: 20px auto;
     background-color: #ff4081;
     /* Vibrant button background color */
     color: #fff;
     border: none;
-    padding: 10px 20px;
+    padding: 15px 25px;
     cursor: pointer;
+    width: 45%;
 }
 
-#draw-button:hover {
+#reset-button {
+    background-color: orangered;
+    color: #fff;
+    border: none;
+    padding: 15px 25px;
+    cursor: pointer;
+    margin-left: 50%;
+    margin: 0;
+    width: 45%;
+}
+
+#reset-button:hover,
+#reset-button:focus {
+    background-color: rgb(251, 110, 59);
+}
+
+#draw-button:hover,
+#draw-button:focus {
     background-color: #ff80ab;
     /* Lighter shade on hover */
 }
@@ -72,4 +121,9 @@ header {
 #draw-button:active {
     background-color: #c60055;
     /* Darker shade on click */
+}
+
+label {
+    color: #c60055;
+    font-size: 1.25em;
 }
