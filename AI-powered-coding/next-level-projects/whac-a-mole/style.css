@@ -54,12 +54,11 @@ h1 {
 
 #game-board {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 20px;
-    place-items: center;
+    grid-template-columns: repeat(3, auto);
+    /* 3 columns */
     grid-gap: 50px;
-    margin: 50px auto;
-    max-width: 800px;
+    /* Reduced gap between columns */
+    justify-content: center;
 }
 
 .hole {
@@ -76,30 +75,14 @@ h1 {
 .hole img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
     position: absolute;
     top: 50%;
-    /* Center vertically */
     left: 50%;
-    /* Center horizontally */
-    transform: translate(-50%, -50%) scale(1);
-    /* Center the image inside the hole */
+    transform: translate(-50%, -50%) scale(0);
+    /* Initial scale to make it invisible */
+    border-radius: 50%;
+    /* Make images perfectly rounded */
     transition: transform 0.2s ease-in-out;
     /* Smooth transition */
-}
-
-.hole.active img {
-    transform: translate(-50%, -50%) scale(1.2);
-    /* Scale up when active */
-}
-
-/* Styling for when mouse clicks the mole */
-.hole.active img:active {
-    transform: translate(-50%, -50%) scale(1.5);
-    /* Scale up further when clicked */
-}
-
-/* Styling for when mouse hovers over the mole */
-.hole img:hover {
-    transform: translate(-50%, -50%) scale(1.2);
-    /* Scale up when hovered */
 }
