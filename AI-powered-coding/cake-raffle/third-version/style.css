@@ -1,0 +1,75 @@
+/* Header styles */
+header {
+    background-color: #ff4081;
+    /* Vibrant header background color */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Container styles */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Entry form styles */
+.entry-form label,
+.entry-form input,
+.entry-form button {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.entry-form button {
+    background-color: #ff4081;
+    /* Vibrant button background color */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.entry-form button:hover {
+    background-color: #ff80ab;
+    /* Lighter shade on hover */
+}
+
+.entry-form button:active {
+    background-color: #c60055;
+    /* Darker shade on click */
+}
+
+/* Participants list styles */
+.participants ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Winner display styles */
+.winner {
+    margin-top: 20px;
+}
+
+/* Draw button styles */
+#draw-button {
+    display: block;
+    margin: 20px auto;
+    background-color: #ff4081;
+    /* Vibrant button background color */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#draw-button:hover {
+    background-color: #ff80ab;
+    /* Lighter shade on hover */
+}
+
+#draw-button:active {
+    background-color: #c60055;
+    /* Darker shade on click */
+}
