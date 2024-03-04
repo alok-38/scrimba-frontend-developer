@@ -24,7 +24,13 @@ document.addEventListener('DOMContentLoaded', function () {
     promoForm.addEventListener('submit', function (event) {
         event.preventDefault(); // Prevent form submission
 
-        const userCode = promoCodeInput.value.trim().toUpperCase(); // Get the user's entered promo code, trim whitespace, and convert to uppercase
+        let userCode = promoCodeInput.value.trim().toUpperCase(); // Get the user's entered promo code, trim whitespace, and convert to uppercase
+
+        // Handle case where user enters promo code in lowercase
+        if (!(userCode in discountRates)) {
+            userCode = userCode.toUpperCase(); // Convert to uppercase for comparison
+        }
+
         const finalPrice = applyDiscount(basePrice, userCode); // Calculate the final price using the entered promo code
 
         if (finalPrice < basePrice) {
