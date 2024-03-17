@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Using props</title>
+    <title>Nesting components</title>
 </head>
 
 <body>
@@ -13,21 +13,29 @@
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <script type="text/babel">
-        function Header({ title }) {
-            return <h1>{title ? title : 'Default title'}</h1>;
+
+        function Header(props) {
+            return (
+                <h1>{props.title}</h1>
+            );
         }
 
         function HomePage() {
+            const names = ['Ada Lovelace', 'Grace Hopper', 'Margaret Hamilton'];
             return (
                 <div>
-                    <Header title="React" />
-                    <Header title="A new title" />
+                    <Header title="Develop. Preview. Ship." />
+                    <ul>
+                        {names.map((name, index) => (
+                            <li key={index}>{name}</li>
+                        ))}
+                    </ul>
                 </div>
             );
         }
-        const root = document.getElementById('root');
-        const rootContainer = ReactDOM.createRoot(root);
-        rootContainer.render(<HomePage />);
+
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(<HomePage />);
     </script>
 </body>
 
