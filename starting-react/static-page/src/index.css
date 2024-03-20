@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+a {
+  letter-spacing: 1px;
+}
+
+p {
+  line-height: 2;
+}
