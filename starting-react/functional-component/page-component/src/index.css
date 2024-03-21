@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: aliceblue;
+  letter-spacing: 1px;
+}
+
+ol li {
+  margin-bottom: 15px;
+  color: tomato;
+}
+
+h1 {
+  color: orangered;
+}
