@@ -2,10 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-header {
-  background-image: url('../src/assets/laura.png');
-  height: 317px;
-  width: 317px;
-  position: absolute;
+.bg-hero-laura {
+  background-size: cover;
+  background-position: top;
   border-radius: 10px 10px 0 0;
 }
