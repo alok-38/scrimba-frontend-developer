@@ -8,7 +8,10 @@ export default {
     extend: {
       backgroundImage: {
         'hero-laura': "url('/src/assets/laura.png')",
-      }
+      },
+      backgroundColor: {
+        'blue': "#1A1B21",
+      },
     },
   },
   plugins: [],
