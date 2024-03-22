@@ -2,3 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  background-color: #ffffff;
+  max-width: 550px;
+  margin: auto;
+  font-family: 'Poppins', sans-serif;
+}
+
+.image12,
+.wedding,
+.bike {
+  width: 176px;
+  height: 235px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.footer div {
+  margin-top: 5px;
+}
+
+.group {
+  width: 70%;
+  margin: auto;
+}

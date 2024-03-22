@@ -7,13 +7,19 @@ import FooterDescription3 from './sub/FooterDescription3';
 
 export default function Footer() {
     return (
-        <div>
-            <img src={image12} alt="image 12" />
-            <FooterDescription1 />
-            <img src={wedding} alt="wedding" />
-            <FooterDescription2 />
-            <img src={bike} alt="bike" />
-            <FooterDescription3 />
+        <div className='footer'>
+            <div>
+                <img className='image12' src={image12} alt="image 12" />
+                <FooterDescription1 />
+            </div>
+            <div>
+                <img className='wedding' src={wedding} alt="wedding" />
+                <FooterDescription2 />
+            </div>
+            <div>
+                <img className='bike' src={bike} alt="bike" />
+                <FooterDescription3 />
+            </div>
         </div>
     )
 }
