@@ -15,3 +15,13 @@ body {
   background-color: whitesmoke;
 }
 
+.felix,
+.fluffykins,
+.pumpkin,
+.whiskerson {
+  display: block;
+  width: 100%;
+  height: auto;
+  align-self: center;
+  object-fit: cover;
+}

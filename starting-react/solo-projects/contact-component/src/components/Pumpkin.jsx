@@ -4,8 +4,8 @@ import mail from "../assets/images/mail-icon.png"
 
 export default function Pumpkin() {
     return (
-        <div>
-            <img className="pumpkinCat" src={PumpkinCat} alt="pumpkinCat" />
+        <div className="w-64">
+            <img className="pumpkinCat rounded-md" src={PumpkinCat} alt="pumpkinCat" />
             <h3>PumpkinCat</h3>
             <p><img src={phone} alt="phone icon" />(212) 555-1234</p>
             <p><img src={mail} alt="mail icon" />thecat@hotmail.com</p>
