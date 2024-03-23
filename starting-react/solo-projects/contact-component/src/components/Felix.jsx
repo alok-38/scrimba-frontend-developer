@@ -4,8 +4,8 @@ import mail from "../assets/images/mail-icon.png"
 
 export default function Felix() {
     return (
-        <div className="felix">
-            <img src={FelixCat} alt="Felix" />
+        <div>
+            <img className="felix" src={FelixCat} alt="Felix" />
             <h3>Felix</h3>
             <p><img src={phone} alt="phone icon" />(212) 555-1234</p>
             <p><img src={mail} alt="mail icon" />thecat@hotmail.com</p>

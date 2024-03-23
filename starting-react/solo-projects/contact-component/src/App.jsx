@@ -6,12 +6,12 @@ import Whiskerson from "./components/Whiskerson"
 function App() {
 
   return (
-    <>
+    <div className="flex gap-5 flex-wrap">
       <Felix />
       <Fluffykins />
       <Pumpkin />
       <Whiskerson />
-    </>
+    </div>
   )
 }
 
