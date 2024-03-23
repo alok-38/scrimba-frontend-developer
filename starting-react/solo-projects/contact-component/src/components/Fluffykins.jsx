@@ -4,8 +4,8 @@ import mail from "../assets/images/mail-icon.png"
 
 export default function Fluffykins() {
     return (
-        <div className="w-64">
-            <img className="fluffy rounded-md" src={Fluffy} alt="fluffy" />
+        <div className="w-64 bg-orange-50 shadow-orange-500/50">
+            <img className="fluffy rounded-xl" src={Fluffy} alt="fluffy" />
             <h3>Fluffy</h3>
             <p><img src={phone} alt="phone icon" />(212) 555-1234</p>
             <p><img src={mail} alt="mail icon" />thecat@hotmail.com</p>

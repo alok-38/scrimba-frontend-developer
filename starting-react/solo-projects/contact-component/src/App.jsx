@@ -5,7 +5,7 @@ import Whiskerson from "./components/Whiskerson";
 
 function App() {
   return (
-    <div className="bg-white-800 flex gap-11">
+    <div className="flex gap-11">
       <Felix />
       <Fluffykins />
       <Pumpkin />
