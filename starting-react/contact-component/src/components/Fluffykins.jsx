@@ -4,7 +4,7 @@ import { IoMail } from "react-icons/io5";
 
 export default function Fluffykins() {
     return (
-        <div>
+        <div className='border-2 rounded-xl shadow-2xl w-80 p-10'>
             <img src={FluffykinsCat} alt='WhiskersonCat'></img>
             <h3 className='font-bold my-5'>Mr. Whiskerson</h3>
             <div className="flex gap-2 items-center">
