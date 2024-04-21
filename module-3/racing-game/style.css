@@ -1,0 +1,19 @@
+.race-track {
+  width: 400px;
+  height: 200px;
+  border: 1px solid #000;
+  position: relative;
+  overflow: hidden;
+}
+
+.player {
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  position: absolute;
+  transition: transform 0.5s ease-in-out;
+}
+
+#player2 {
+  top: 50px;
+}

@@ -1,0 +1,93 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Hero section styling */
+.hero {
+    background-color: #F5F5F5;
+    /* Light grey background */
+    padding: 80px 0;
+    /* Top and bottom padding */
+    text-align: center;
+    /* Center-align content */
+}
+
+.container {
+    max-width: 800px;
+    /* Limit width to avoid stretching */
+    margin: 0 auto;
+    /* Center container */
+}
+
+.hero-image {
+    width: 250px;
+    /* Adjust width as needed */
+    height: auto;
+    /* Maintain aspect ratio */
+    margin-bottom: 20px;
+    /* Space between image and main heading */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    /* Soft shadow */
+    border-radius: 50%;
+    /* Rounded corners */
+}
+
+.main-heading {
+    font-size: 36px;
+    /* Large font size for main heading */
+    color: #333;
+    /* Dark grey text color */
+    margin-bottom: 20px;
+    /* Space between main heading and subheading */
+}
+
+.sub-heading {
+    font-size: 24px;
+    /* Medium font size for subheading */
+    color: #84412f;
+    /* Grey text color */
+    margin-bottom: 20px;
+    /* Space between subheading and description */
+}
+
+.description {
+    font-size: 18px;
+    /* Small font size for description */
+    color: #777;
+    /* Light grey text color */
+    margin-bottom: 30px;
+    /* Space between description and button */
+}
+
+.cta-button {
+    display: inline-block;
+    /* Make button inline */
+    padding: 10px 45px;
+    /* Padding inside button */
+    background-color: #4CAF50;
+    /* Green button background color */
+    color: #fff;
+    /* White text color */
+    text-decoration: none;
+    /* Remove underline */
+    border-radius: 5px;
+    /* Rounded corners */
+    transition: background-color 0.3s;
+    /* Smooth transition on hover */
+    letter-spacing: 1px;
+    font-size: 2rem;
+}
+
+.cta-button:hover {
+    background-color: #45a049;
+    /* Darker green on hover */
+}

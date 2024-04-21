@@ -1,0 +1,67 @@
+/* Header styles */
+.header {
+    background-color: #ff4081;
+    /* Vibrant pink color */
+    color: #fff;
+    /* White text color */
+    text-align: center;
+    padding: 20px;
+}
+
+/* Container styles */
+.container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Entry form styles */
+.entry-form {
+    margin-bottom: 20px;
+}
+
+/* Participants list styles */
+.participants-list {
+    margin-bottom: 20px;
+}
+
+/* Winner display styles */
+.winner-display {
+    margin-bottom: 20px;
+}
+
+/* Common button styles */
+button {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Default button styles */
+button[type="submit"] {
+    background-color: #007bff;
+    /* Blue color */
+    color: #fff;
+    /* White text color */
+}
+
+/* Hover button styles */
+button:hover {
+    background-color: #0056b3;
+    /* Darker blue color */
+}
+
+/* Draw button styles */
+#drawButton {
+    background-color: #ff4081;
+    /* Vibrant pink color */
+    color: #fff;
+    /* White text color */
+}
+
+/* Hover draw button styles */
+#drawButton:hover {
+    background-color: #e0316b;
+    /* Darker pink color */
+}

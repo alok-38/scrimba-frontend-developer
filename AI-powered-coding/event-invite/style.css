@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: rgb(214, 116, 18);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+    text-align: center;
+}
+
+header h2 {
+    margin: 5px 0 0;
+    font-size: 18px;
+    text-align: center;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+section h2 {
+    margin-top: 0;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+p {
+    margin: 0;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="email"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #eb8107;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: block;
+    margin: auto;
+    margin-top: 15px;
+    width: 100%;
+}
+
+#confirmationMessage {
+    background-color: #dff0d8;
+    border: 1px solid #3c763d;
+    color: #3c763d;
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+#confirmationMessage p {
+    margin: 0;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 600px) {
+    main {
+        margin: 10px;
+        padding: 10px;
+        line-height: 2;
+    }
+
+    h1 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    input[type="email"],
+    select {
+        font-size: 14px;
+    }
+
+    button[type="submit"] {
+        font-size: 14px;
+        margin-top: 15px;
+        display: block;
+        width: 100%;
+        padding: 15px;
+        letter-spacing: 1px;
+    }
+
+    #confirmation-message {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit Shelves</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Add some basic styling for better visual representation */
+        #apple-shelf, #orange-shelf {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <label for="new-fruit">Add a new fruit:</label>
+        <input type="text" id="new-fruit">
+        <button id="addFruitBtn">Add</button>
+    </div>
+
+    <div>
+        <label for="remove-fruit">Remove a fruit:</label>
+        <select id="remove-fruit">
+            <option value="🍎">Apple</option>
+            <option value="🍊">Orange</option>
+        </select>
+        <button id="removeFruitBtn">Remove</button>
+    </div>
+
+    <div id="apple-shelf"></div>
+    <div id="orange-shelf"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

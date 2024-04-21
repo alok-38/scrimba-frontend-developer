@@ -1,0 +1,105 @@
+/* Body styles */
+body {
+    background-color: #f0f0f0;
+    /* Light body background */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container styles */
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    background-color: #fff;
+    /* White background for the form container */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    /* Adds a subtle shadow */
+    letter-spacing: 1px;
+}
+
+/* Heading styles */
+.heading {
+    color: #471869;
+    /* Purple color for the heading */
+    text-align: center;
+}
+
+/* Offer paragraph styles */
+.offer {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Form styles */
+.subscription-form {
+    text-align: center;
+}
+
+/* Email input styles */
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="email"],
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    /* Ensures padding and border are included in element's total width and height */
+    margin-bottom: 20px;
+    outline: none;
+}
+
+input[type="email"]:hover,
+input[type="text"]:hover {
+    border: #471869 .5px solid;
+}
+
+label {
+    display: none;
+}
+
+input::placeholder {
+    text-align: center;
+    font-size: 1.5em;
+    color: #471869;
+    letter-spacing: 1.5px;
+    font-weight: 100;
+}
+
+/* Button styles */
+.submit-button {
+    background-color: #471869;
+    /* Purple color for the button */
+    color: #fff;
+    /* White text color */
+    border: none;
+    padding: 15px 25px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    /* Smooth transition for button hover effect */
+    width: 100%;
+    letter-spacing: 1px;
+}
+
+.submit-button:hover {
+    background-color: #5e2e9a;
+    /* Darker purple color on hover */
+}
+
+/* Img */
+img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    display: block;
+    object-fit: cover;
+    margin: auto;
+}

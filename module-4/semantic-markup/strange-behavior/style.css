@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: whitesmoke;
+    height: 100%;
+}
+
+h1{
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', sans-serif; 
+}
+
+h2{
+    margin: 0;
+    margin-bottom: 25px;
+}
+
+a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+header{
+    background-color: #b80000;
+    padding: 50px;
+}
+
+section{
+    padding: 30px 20px;
+    display: flex;
+}
+
+.header-text{
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+}
+
+.selected{
+    text-decoration: underline;
+}
+
+.text-left{
+    padding-right: 20px;
+    line-height: 1.6;
+}
+
+img{
+    width: 250px;
+}
+
+footer{
+    text-align: center;
+    font-size: small;
+    flex-shrink: 0;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 50px;
+}
+
+main {
+    width: 50%;
+    margin: 75px auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 50vh;
+}

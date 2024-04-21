@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    max-width: 550px;
+    background: #1F2937;
+    height: 550px;
+    padding: 3%;
+}
+
+h1 {
+    width: 100%;
+    color: #fff;
+    line-height: 40px;
+    font-weight: 800;
+    font-size: 40px;
+    letter-spacing: -1px;
+    height: 80px;
+}
+
+span {
+    color: #4ADF86;
+    display: block;
+}
+
+div {
+    display: flex;
+}
+
+p {
+    width: 100%;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    color: #D5D4D8;
+    margin: 15px 0 0 15px;
+}
+
+button {
+    display: inline-flex;
+    padding: 9px 17px 9px 15px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    background: #10B981;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    margin-top: 25px;
+    width: 95%;
+    margin-bottom: 15px;
+}
+
+button:hover {
+    background: #0e8c65;
+    color: #fff;
+    transform: scale(1.05);
+    transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.password-generate,
+.password-display {
+    width: 100%;
+}
+
+input[type="range"] {
+    width: 90%;
+    margin: 25px 15px 15px 0;
+    vertical-align: bottom;
+    background-color: #4ADF86;
+    border: 1px solid #4ADF86;
+    border-radius: 5px;
+    outline: none;
+    transition: background-color 0.3s ease;
+}
+
+input[type="range"]:hover {
+    background-color: #4ADF86;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background-color: #4CAF50;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+input[type="range"]::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    background-color: #4CAF50;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+input[type="range"]:focus::-webkit-slider-thumb {
+    box-shadow: 0 0 3px #4CAF50;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+}
+
+/* Add these styles for the toggle switch */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 34px;
+    margin-left: 15px;
+    width: 100%;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #4CAF50;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #4CAF50;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+input[type="text"] {
+    height: 32px;
+    width: 100%;
+    margin-right: 15px;
+}
+
+.password-display {
+    margin: 50px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+label {
+    padding-right: 15px;
+}
+
+label,
+input[type="checkbox"] {
+    color: #D5D4D8;
+    font-size: 18px;
+    margin-right: 15px;
+}
+

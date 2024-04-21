@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css?family=Bubblegum+Sans&display=swap");
+
+:root {
+  --bg-color: #ECF2FF;
+  --text-color: #2B283A;
+  --title-color: #4A4E74;
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: sans-serif;
+    color: var(--text-color);
+}
+
+section {
+    width: 90%;
+    margin: 0 auto;
+}
+
+h1,
+h2 {
+  font-family: "Bubblegum Sans";
+  text-align: center;
+}
+
+h1 {
+    /* I don't want red anymore, I want it to be blue! 
+    Help me change it! */
+    color: var(--title-color);
+    font-size: 3em;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-rows: 100px;
+}
+
+ul li {
+    list-style: none;
+    font-size: 3em;
+    justify-self: center;
+}
+
+h3,p {
+    margin-left: 25px;
+}
+
+ol li {
+    margin-bottom: 15px;
+}

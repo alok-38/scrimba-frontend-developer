@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup layout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Welcome!</h1>
+    <p>You have been granted access to the platform. Please create an account.</p>
+    <form>
+        <label for="username">Username:</label>
+        <input type="text" id="username" placeholder="Enter username" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" placeholder="Enter password" required>
+
+        <label for="profileImage">Profile Image:</label>
+        <input type="file" id="profileImage" name="image" accept="image/*">
+
+        <button type="button" onclick="signUp()">Sign up!</button>
+    </form>
+</body>
+</html>
