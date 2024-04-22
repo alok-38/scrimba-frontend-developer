@@ -25,6 +25,7 @@ ul {
 
 ul li {
     margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 input:hover,
