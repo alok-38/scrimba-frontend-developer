@@ -20,12 +20,25 @@ button {
 ul {
     list-style-type: none;
     padding: 0;
-    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
 }
 
 ul li {
-    margin-bottom: 10px;
-    margin-top: 10px;
+    background-color: #FFFDF8;
+    padding: 15px;
+    border-radius: 8px;
+    flex-grow: 1;
+    font-size: 20px;
+    text-align: center;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2)
+}
+
+ul li:hover {
+    background-color: #FFECC7;
+    cursor: pointer;
 }
 
 input:hover,
