@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+input::placeholder {
+    text-align: center;
+}
+
+input,
+button {
+    outline: none;
+    border: 0;
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+input:hover,
+input:focus {
+    outline: 4px ridge rgba(170, 50, 220, .6);
+border-radius: 2rem;
+}
