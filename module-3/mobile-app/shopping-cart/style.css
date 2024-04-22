@@ -14,11 +14,17 @@ button {
     outline: none;
     border: 0;
     width: 100%;
+    letter-spacing: 1px;
 }
 
 ul {
     list-style-type: none;
     padding: 0;
+    margin-top: 25px;
+}
+
+ul li {
+    margin-bottom: 10px;
 }
 
 input:hover,
