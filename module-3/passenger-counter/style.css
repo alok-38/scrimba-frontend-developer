@@ -25,10 +25,15 @@ p {
 
 p {
 	margin-top: 25px;
+	font-size: 2.5em;
 }
 
 h1,h2 {
 	margin-bottom: 25px;
+}
+
+h1 {
+	font-size: 3em;
 }
 
 h2 {
@@ -38,10 +43,44 @@ h2 {
 button {
 	margin-top: 20px;
 	padding: 10px 45px;
-	width: 10%;
 	cursor: pointer;
 	letter-spacing: 1px;
 	outline: none;
 	border: 0;
+	color: #ffffff;
+	transition: background-color 0.3s ease;
 }
 
+/* Styling for increment button */
+#increment-btn {
+	background-color: rgb(245, 186, 76);
+}
+
+#increment-btn:hover,
+#increment-btn:focus {
+	background-color: rgb(255, 166, 2);
+	transform: scale(1.05); /* Scale up on hover/focus */
+}
+
+/* Styling for save button */
+#save-btn {
+	background-color: rgb(71, 122, 71);
+	width: 178.26px;
+}
+
+#save-btn:hover,
+#save-btn:focus {
+	background-color: rgb(14, 128, 14);
+	transform: scale(1.05); /* Scale up on hover/focus */
+}
+
+#reset-btn {
+	background-color: rgb(246, 20, 20);
+	width: 178.26px;
+}
+
+#reset-btn :focus,
+#reset-btn:hover {
+	background-color: rgb(243, 59, 59);
+	transform: scale(1.05);
+}
