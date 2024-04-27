@@ -16,7 +16,7 @@ incrementButton.addEventListener('click', incrementCount);
 // Save previous entries
 const saveCount = () => {
 	if (saveElement.textContent !== 'Previous entries: ') {
-		saveElement.textContent += ', ';
+		saveElement.textContent += ' - ';
 	}
 	saveElement.textContent += count;
 	count = 0;
