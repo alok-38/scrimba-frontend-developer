@@ -24,7 +24,7 @@ div {
   flex-direction: column;
   max-width: 320px;
   margin: 100px auto 0 auto;
-  border: solid rgb(58, 57, 57) 4px;
+  /* border: solid rgb(58, 57, 57) 4px; */
   border-radius: 15px;
 }
 
@@ -39,12 +39,30 @@ button {
   text-align: center;
   font-family: "Rubik", sans-serif;
   border-radius: 8px;
+  height: 60px;
+  width: 100%;
 }
 
 input {
   color: #432000;
+  margin: 10px 0;
 }
 
 button {
   color: #fdfdfd;
+}
+
+img {
+  width: 150px;
+  margin: 0 auto;
+}
+
+button:focus,
+button:hover {
+	background-color: #ad606e;
+}
+
+input:focus,
+input:hover {
+	border: 3px solid #ad606e;
 }
