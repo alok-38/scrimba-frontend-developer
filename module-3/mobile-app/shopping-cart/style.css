@@ -59,10 +59,23 @@ img {
 
 button:focus,
 button:hover {
-	background-color: #ad606e;
+  background-color: #ad606e;
 }
 
 input:focus,
 input:hover {
-	border: 3px solid #ad606e;
+  border: 3px solid #ad606e;
+}
+
+ul {
+  list-style-type: none;
+  margin-top: 15px;
+  font-family: "Rubik", sans-serif;
+  font-size: 1.5em;
+  font-style: italic;
+  padding-left: 5px;
+}
+
+ul li {
+  margin-top: 5px;
 }
